@@ -1,0 +1,56 @@
+.storybook-select {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.storybook-select:hover {
+  border-color: #999;
+}
+.storybook-select:focus {
+  border-color: #333;
+}
+.storybook-select:active {
+  border-color: #000;
+}
+.storybook-select option {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.storybook-select option:hover {
+  background-color: #f4f4f4;
+}
+.storybook-select option:active {
+  background-color: #e9e9e9;
+}
+.storybook-select option:checked {
+  background-color: #0074d9;
+  color: white;
+}
+.storybook-select option:checked:hover {
+  background-color: #0056b3;
+}
+.storybook-select option:checked:active {
+  background-color: #004b9e;
+}
+
+.storybook-select--small {
+  font-size: 12px;
+  padding: 4px;
+  width: 100px;
+}
+.storybook-select--medium {
+  font-size: 16px;
+  padding: 8px;
+  width: 200px;
+}
+.storybook-select--large {
+  font-size: 20px;
+  padding: 12px;
+  width: 300px;
+}

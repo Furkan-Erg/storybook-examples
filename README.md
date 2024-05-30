@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Project with Storybook
+
+## Overview
+
+Welcome to my Next.js project integrated with Storybook.js. This project is part of my journey to master front-end development by learning how to use Storybook.js for building and documenting UI components. Here, I have created and documented a Select component to showcase its functionality and usage.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14.x or later)
+- [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. Clone the repository:
+2. Install dependencies:
+
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   yarn dev
+   # or
+   npm run dev
+   ```
+
+4. Start Storybook:
+
+   ```bash
+   yarn storybook
+   # or
+   npm run storybook
+   ```
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+STORYBOOK-EXAMPLES/
+├── components/
+│   └── Select/
+│       ├── Select.tsx
+│       ├── Select.stories.ts
+│       └── select.css
+├── pages/
+│   └── index.js
+├── .storybook/
+│   ├── main.js
+│   ├── preview.js
+├── public/
+├── styles/
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Storybook
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Storybook is a development environment for UI components. It allows you to develop components in isolation and document them interactively. This project uses Storybook to document the Select component.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To view the stories:
 
-## Learn More
+1. Run Storybook using `yarn storybook` or `npm run storybook`.
+2. Open [http://localhost:6006](http://localhost:6006) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Select Component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The Select component is a reusable dropdown component. It is documented with various stories to showcase different states and configurations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Intent
 
-## Deploy on Vercel
+The primary intent behind this project is to enhance my skills in:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Integrating Storybook.js with Next.js.
+- Building and documenting reusable UI components.
+- Improving my understanding of component-driven development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+By sharing this project, I aim to contribute to the community and help others who are on a similar learning path.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
